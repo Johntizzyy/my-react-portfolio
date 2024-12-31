@@ -1,0 +1,91 @@
+#hero-section {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #hero-section > div > #hero-image {
+    width: 750px;
+    height: 500px;
+    margin-top: 8rem;
+    cursor: pointer;
+    /* border: 20px solid red; */
+  }
+  #hero-section > div > #hero-image > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  /* HERO TEXTS */
+  
+  #hero-text {
+    width: 750px;
+    margin-top: 2rem;
+  }
+  #hero-text > h1 {
+    font-weight: 500;
+    color: var(--white);
+    /* color: #fff; */
+  }
+  #hero-text > p {
+    color: #949292;
+    font-size: 1rem;
+  }
+  #hero-text > p > span {
+    color: var(--white);
+  }
+  
+  #hero-text > #cv {
+    color: var(--black);
+    background-color: var(--white);
+    margin-right: 20px;
+  }
+  #hero-text > #cv:hover {
+    background-color: var(--black);
+    color: var(--white);
+  }
+  
+  #hero-text > #mail {
+    color: var(--white);
+  }
+  #hero-text > #mail:hover {
+    color: var(--black);
+    background-color: var(--white);
+  }
+  
+  
+  @media only screen and (max-width:900px) {
+    #hero-section > div > #hero-image{
+      width: 600px;
+      height: 450px;    }
+
+      #hero-text {
+        width: 600px;
+        margin-top: 2rem;
+      }
+  } 
+
+  @media only screen and (max-width:600px) {
+    #hero-section > div > #hero-image{
+      width: 400px;
+      height: 450px;    }
+
+      #hero-text {
+        width: 400px;
+        margin-top: 2rem;
+      }
+  }
+
+   @media only screen and (max-width:400px) {
+    #hero-section > div > #hero-image{
+      width: 300px;
+      height: 400px;    }
+
+      #hero-text {
+        width: 300px;
+        margin-top: 2rem;
+      }
+  }

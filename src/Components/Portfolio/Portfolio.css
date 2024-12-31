@@ -1,0 +1,160 @@
+#portfolio-section {
+    /* height: 100vh; */
+    background: var(--white);
+    margin-top: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: var(--black);
+  }
+  #portfolio-section > div > div > span {
+    color: var(--dark-grey);
+  }
+  
+  /* PROJECT SECTION STYLING */
+  .projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .projects-section > .project-div {
+    /* border: 2px solid var(--dark-grey); */
+    /* border-radius: 10px; */
+    width: 350px;
+    height: 450px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1)
+  }
+
+  .projects-section > .project-div:hover{
+    transform: scale(1.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  .projects-section > .project-div > a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--dark-grey);
+  }  .projects-section > .project-div > a video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--dark-grey);
+  }
+  /* PROJECST DETAILS STYLING */
+  
+  #projects-details {
+    background-color: var(--black);
+    color: var(--white);
+    /* height: 100vh; */
+    width: 100%;
+    padding: 5rem 0;
+  }
+  
+  #projects-details > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 100px;
+  }
+  
+  #projects-details > .container:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  #projects-details > .container > .ext-project-img {
+    /* border: 2px solid var(--white); */
+    width: 500px;
+    height: 350px;
+  }
+  
+  
+  #projects-details > .container > .ext-project-img > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  #projects-details > .container > .ext-project-img > a > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  #projects-details > .container > .ext-project-details {
+    /* border: 2px solid var(--white); */
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-direction: column;
+  }
+  
+  #projects-details > .container > .ext-project-details > p {
+    color: var(--dark-grey);
+    font-size: 1rem;
+  }
+  
+  #projects-details > .container > .ext-project-details > ul {
+    display: flex;
+    justify-content: space-between;
+  } /*
+  #projects-details > .container > .ext-project-details>ul>div{
+      display: flex;
+  
+  } */
+  #projects-details > .container > .ext-project-details > ul li {
+    list-style: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    /* color: var(--black);
+      background-color: var(--white); */
+    margin-right: 10px;
+    /* border-radius: 8px; */
+    /* border: 2px solid var(--dark-grey); */
+    box-shadow: 0 0 3px var(--dark-grey);
+    border-radius: 5px;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+  }
+  #projects-details > .container > .ext-project-details > ul li:hover {
+    background-color: var(--white);
+    color: var(--black);
+
+  }
+  
+  #projects-details > .container > .ext-project-details > ul li a{
+    color: var(--white);
+    text-decoration: none;
+        transition: all ease-in-out 0.5s;
+
+  }
+  #projects-details > .container > .ext-project-details > ul li a:hover{
+    color: var(--black);
+  }
+
+
+
+  @media only screen and (max-width:400px) {
+    
+    .projects-section > .project-div {
+      /* border: 2px solid var(--dark-grey); */
+      /* border-radius: 10px; */
+      width: 300px;
+      height: 400px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1)
+    }
+  
+    .projects-section > .project-div:hover{
+      transform: scale(1.08);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+  }

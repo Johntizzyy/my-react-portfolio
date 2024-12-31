@@ -1,0 +1,58 @@
+#contact #footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #contact #footer > div > ul > li {
+    list-style: none;
+    font-size: 1rem;
+    cursor: pointer;
+    /* transition: all ease-in-out 1s; */
+  }
+  #contact #footer > div > ul > li >a{
+      font-size: 1rem;
+      cursor: pointer;
+      color:var(--dark-grey);
+      position: relative;
+
+      /* text-decoration: none; */
+    }
+    #contact #footer > div > ul > li >a:hover{
+      color: var(--white);
+    }    
+    
+    #contact #footer > div > ul > li.link >a:after{
+      position: absolute;
+      content: '';
+      background-color: var(--white);
+      height: 2px;
+      border-radius: 10px;
+      width: 0px;
+      top: 20px;
+      right: 15px;
+      transition: 0.3s;
+    }
+    #contact #footer > div > ul > li >a:hover::after{
+      width: 50px;
+    }
+  /* #contact #footer > #n-l > ul > li a::after {
+    content: '';
+    background-color: #fd09a0;
+    width: 100%;
+    position: absolute;
+    border-radius: 15px;
+    height: 3px;
+    top: 4rem;
+    left: 0px;
+    transition: 0.2s;
+  } */
+  
+  .copy a{
+    color: var(--dark-grey);
+    text-decoration: none;
+}
+.copy a:hover{
+  color: var(--white);
+}
+
+  

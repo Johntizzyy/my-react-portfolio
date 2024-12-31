@@ -1,0 +1,27 @@
+#contact {
+    background: var(--black);
+  }
+  
+  #contact > .container > div {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #contact > .container > div > a > h1> {
+    margin-right: 10rem;
+  }
+  #contact > .container > div > h1::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    top: 20px;
+    right: 10px;
+  }
+  #contact > .container > div > h1 {
+    margin-left: 10rem;
+  }
+  

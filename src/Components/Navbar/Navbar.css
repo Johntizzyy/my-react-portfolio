@@ -1,0 +1,47 @@
+.navbar-nav
+{
+   position: fixed;
+   top: 20px;
+   background: rgba(0, 0, 0, 0.5);
+   border-radius:20px ;
+   z-index: 1;
+}
+.navbar-toggler-icon{
+   background-color: red;
+   color: white;
+}
+#home{
+   color: var(--dark-grey);
+}
+#home:hover{
+   color: var(--white);
+}
+
+.nav-link {
+   color: var(--dark-grey);
+}
+
+.nav-link:hover{
+   color: var(--white);
+}
+
+.nav-link.active-nav{
+   color: var(--white);
+
+}
+.home-nav{
+   color: var(--dark-grey);
+}
+#active-nav{
+   color: var(--white);
+
+}
+
+.navbar-brand {
+ font-size: 2.5rem;
+ color: var(--white);
+ padding: 0 20px;
+}
+.navbar-brand:hover{
+   color: var(--white);
+}
